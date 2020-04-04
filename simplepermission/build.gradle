@@ -45,7 +45,7 @@ version = "1.0.0" //这里上传到jcenter是版本的控制
 
 def siteUrl = 'https://github.com/btcw/SimplePermission.git'      // 项目的主页(可以写自己的库的GitHub地址)
 def gitUrl = 'https://github.com/btcw/SimplePermission.git'      // Git仓库的url  这个是说明，可随便填
-group = "top.iwill"
+group = "top.iwill.futuretools"
 install {
     repositories.mavenInstaller {
         pom {

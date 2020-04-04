@@ -23,13 +23,13 @@ class MainActivity : BaseActivity() {
             }
         }
 
-        request(arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE),1){
-            onGranted {grantedList->
-                //do with grantedList...
-            }
-            onDenied {deniedList->
-                //do with deniedList...
-            }
-        }
+//        request(arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE),1){
+//            onGranted {grantedList->
+//                //do with grantedList...
+//            }
+//            onDenied {deniedList->
+//                //do with deniedList...
+//            }
+//        }
     }
 }
