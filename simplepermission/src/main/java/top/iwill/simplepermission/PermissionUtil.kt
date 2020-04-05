@@ -14,6 +14,19 @@ import kotlin.collections.ArrayList
  * @author: btcw
  * @date: 2020/4/2
  */
+fun AppCompatActivity.request(permission: String, requestCode: Int, callback: ISinglePermissionCallback){
+    request(permission, requestCode){
+        callback.onPermissionResult(it)
+    }
+}
+
+fun AppCompatActivity.request(permissions: Array<out String>, requestCode: Int, callback:IPermissionCallback){
+    request(permissions,requestCode){
+        onGranted { callback.onGranted(it) }
+        onDenied { callback.onDenied(it) }
+    }
+}
+
 fun AppCompatActivity.request(permission: String, requestCode: Int, callback: (res: Boolean) -> Unit) {
     request(arrayOf(permission), requestCode) {
         onGranted{ callback.invoke(true)}
