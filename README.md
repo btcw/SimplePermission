@@ -5,7 +5,7 @@
 #### 1.添加依赖
 
 ```gradle
-implementation 'top.iwill.futuretools:simplepermission:1.0.0'
+implementation 'top.iwill.futuretools:simplepermission:1.0.1'
 ```
 
 #### 2.代码中使用
